@@ -4,7 +4,7 @@
 In this architecture, a public-facing Application Load Balancer forwards client traffic to our web tier EC2 instances. The web tier is running Nginx webservers that are configured to serve a React.js website and redirects our API calls to the application tier’s internal facing load balancer. The internal facing load balancer then forwards that traffic to the application tier, which is written in Node.js. The application tier manipulates data in an Aurora MySQL multi-AZ database and returns it to our web tier. Load balancing, health checks and autoscaling groups are created at each layer to maintain the availability of this architecture.
 
 ## Architecture Overview
-![Architecture Diagram](https://github.com/aws-samples/aws-three-tier-web-architecture-workshop/blob/main/application-code/web-tier/src/assets/3TierArch.png)
+![Architecture Diagram](https://github.com/Ryanixon/AWS-3-TIER-ARCHITECTURE/blob/4ef7e358bfdb08fd282c8c6841c464d5f43e516a/3TierArchitecture.png)
   
 
 ## Pre-requisites:
@@ -19,12 +19,12 @@ click on “Create an AWS Account” button in the top right corner to create on
 4. Secure: Implements AWS IAM roles, Security Groups, and Network ACLs for secure communication and data protection.
 
 ## AWS Services Used
-Amazon EC2: For hosting the application layer.
-Amazon RDS: To manage the relational database.
-Amazon S3: For static file storage.
-Amazon VPC: For network isolation and security.
-Amazon Route 53: For DNS routing.
-Elastic Load Balancing (ELB): For distributing traffic across instances.
-AWS Auto Scaling: To dynamically scale resources based on traffic.
+1. Amazon EC2: For hosting the application layer.
+2. Amazon RDS: To manage the relational database.
+3. Amazon S3: For static file storage.
+4. Amazon VPC: For network isolation and security.
+5. Amazon Route 53: For DNS routing.
+6. Elastic Load Balancing (ELB): For distributing traffic across instances.
+7. AWS Auto Scaling: To dynamically scale resources based on traffic.
 
 
